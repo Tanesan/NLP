@@ -58,7 +58,7 @@ print(bag.toarray())
 # logを使用しているのは、頻度の低い文書に過剰な重みが与えられないようにするためである
 # sklearnでは、TfidfTransformerクラスという変換器を使用.
 
-from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import TfidfTransforme
 tfidf = TfidfTransformer(use_idf=True, norm='l2', smooth_idf=True)
 np.set_printoptions(precision=2)
 print(tfidf.fit_transform(count.fit_transform(docs)).toarray())
